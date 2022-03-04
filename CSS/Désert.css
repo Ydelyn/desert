@@ -1,0 +1,240 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#author{
+    display: none;
+}
+
+body{
+    background-color: rgb(189, 189, 189);
+}
+
+h1{
+    font-family: 'Courgette', cursive;
+    color: rgb(167, 85, 26);
+}
+
+#page{
+    background-color: white;
+    margin: auto;
+}
+
+header{
+    padding: 15px;
+}
+
+nav{
+    position: relative;
+    margin: auto;
+}
+
+a{
+    position: relative;
+    text-decoration: unset;
+    color: black;
+    font-weight: bold;
+    margin: auto;
+}
+
+main{
+    border-bottom: rgb(189, 189, 189) 2px solid;
+}
+
+#corps{
+    padding: 20px;
+    text-align: justify;
+}
+
+#corps > h2{
+    text-align: center;
+}
+
+#corps > img {
+    width: 100%;
+    margin: 20px 0px;
+}
+
+#droite{
+    margin-top: 15px;  
+    overflow: hidden;
+}
+
+#top > h2, #gal >h2{
+    font-size: 20px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-bottom: rgba(173, 173, 173, 0.5) 2px solid;
+    color: rgb(124, 22, 4);
+}
+
+ol{
+    margin-left: 20px;
+}
+
+#img{
+    display: flex;
+    flex-wrap: wrap;
+    width: 260px;
+}
+
+img{
+    margin: 1px;
+}
+
+footer{
+    text-align: center;
+    padding: 10px;
+}
+
+/* Pour Desktop */
+
+@media screen and (min-width:901px){
+
+    #page{
+        width: 80%;
+    }
+
+    #haut{
+        display: flex;
+        border-bottom: rgba(173, 173, 173, 0.5) 2px solid;
+    }
+
+    header{
+        display: flex;
+        width: 50%;
+    }
+
+    h1{
+        width: 70%;
+        margin: auto ;
+    }
+
+    nav{
+        width: 50%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    a{
+        padding: 15px ;
+    }
+
+    main{
+        display: flex;
+    }
+
+    #corps{
+        width: 60%;
+    }
+
+    #droite{
+        position: relative;
+        width: 34%;
+        left: 30px;
+    }
+
+    ol{
+        margin-bottom: 200px ;
+    }
+
+    #gal{
+        bottom: 40px;
+    }
+}
+
+/*Pour Tablette*/
+
+@media screen and (min-width:601px) and (max-width: 900px){
+
+    #page{
+        width: 90%;
+    }
+    
+    #haut{
+        width: 95%;
+        margin: auto;
+    }
+
+    header{
+        width: 50%;
+        margin: auto;
+        text-align: center;
+    }
+    
+    nav{
+        width: 90%;
+        text-align: center;
+        background-color: rgb(189, 189, 189);
+        padding: 10px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    a{
+        margin: auto;
+    }
+
+    #corps{
+        margin: auto;
+        width: 80%;
+    }
+
+    #droite{
+        display: flex;
+        width: 100%;   
+        border-top: 2px rgb(189, 189, 189) solid;     
+        border-bottom: 2px rgb(189, 189, 189) solid;  
+        padding-bottom: 80px;   
+    }
+    
+    #top{
+        position: relative;
+        width: 35%;
+        margin-left: 20px;
+    }
+    
+    #gal{
+        position: relative;
+        width: 50%;
+        left: 60px;
+    }
+}
+
+/*Pour Mobile*/
+
+@media screen and (max-width: 600px){
+
+    #page{
+        width: 100%;
+    }
+
+    header{
+        margin: auto;
+        text-align: center;
+    }
+    
+    nav{
+        text-align: center;
+        padding: 10px;
+    }
+
+    a{
+        display: block;
+        margin: 2px 40px;
+        background-color: rgb(189, 189, 189);
+        padding: 10px 50px;
+    }
+    
+    #corps{
+        margin: auto;
+        width: 80%;
+    }
+    
+    #droite{
+        display: none; 
+    }
+}
